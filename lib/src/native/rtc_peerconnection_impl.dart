@@ -519,4 +519,9 @@ class RTCPeerConnectionNative extends RTCPeerConnection {
       throw 'Unable to RTCPeerConnection::addTransceiver: ${e.message}';
     }
   }
+
+  @override
+  Future<void> restartIce() {
+    return Future.value();
+  }
 }
